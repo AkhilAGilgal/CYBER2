@@ -4,7 +4,7 @@ app = Flask(__name__)
 
 def simple_waf_filter(input_data):
     if input_data:
-        blacklist = ["<script", "alert", "onerror", ">", "<"]
+        blacklist = ["<script", "alert", "onerror"]
         
         print(f"[WAF] Input before filtering: {input_data}")
         
